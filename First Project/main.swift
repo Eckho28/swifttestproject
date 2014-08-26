@@ -8,20 +8,17 @@
 
 import Foundation
 
+//This is my first car
 var myFirstCar = CarFactory()
+myFirstCar.setupCarDetailsWithName ("Mustang", colorOfCar: "Red", horsepowerOfCar: 200, automaticOptionOfCar: true)
 
-myFirstCar.name = "Mustang"
-myFirstCar.color = "Red"
-myFirstCar.horsepower = 200
-myFirstCar.automaticOption = true
 
-println("My \(myFirstCar.name) is \(myFirstCar.color) and has \(myFirstCar.horsepower) horsepower!")
+myFirstCar.description()
 
+
+
+//This is my second car
 var mySecondCar = CarFactory()
+mySecondCar.setupCarDetailsWithName ("BMW", colorOfCar: "Blue", horsepowerOfCar: 300, automaticOptionOfCar: false)
 
-mySecondCar.name = "BMW"
-mySecondCar.color = "Blue"
-mySecondCar.horsepower = 300
-mySecondCar.automaticOption = false
-
-println("My \(mySecondCar.name) is \(mySecondCar.color) and has \(mySecondCar.horsepower) horsepower!")
+mySecondCar.description()
